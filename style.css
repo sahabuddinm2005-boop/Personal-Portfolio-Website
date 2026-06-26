@@ -1,25 +1,408 @@
+/* ===========================
+   Google Font
+=========================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
 body{
-font-family:Arial;
-margin:0;
-padding:0;
+    background:#f4f4f4;
+    color:#333;
+    line-height:1.6;
 }
+
+/* ===========================
+   Navbar
+=========================== */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#fff;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+nav{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#2563eb;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#2563eb;
+}
+
+#dark-btn{
+    padding:8px 12px;
+    border:none;
+    background:#2563eb;
+    color:#fff;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* ===========================
+   Home
+=========================== */
+
+#home{
+    width:90%;
+    margin:auto;
+    min-height:90vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.home-text{
+    width:50%;
+}
+
+.home-text h1{
+    font-size:55px;
+}
+
+.home-text span{
+    color:#2563eb;
+}
+
+.home-text h2{
+    margin-top:15px;
+    color:#555;
+}
+
+.home-text p{
+    margin:25px 0;
+    font-size:18px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 28px;
+    background:#2563eb;
+    color:#fff;
+    text-decoration:none;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+.home-image{
+    width:40%;
+    text-align:center;
+}
+
+.home-image img{
+    width:350px;
+    border-radius:50%;
+    box-shadow:0 0 25px rgba(0,0,0,.2);
+}
+
+/* ===========================
+   Sections
+=========================== */
+
 section{
-padding:60px;
+    padding:80px 10%;
 }
-button{
-padding:10px 20px;
-background:#0077ff;
-color:white;
-border:none;
-cursor:pointer;
+
+section h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:40px;
+    color:#2563eb;
 }
-button:hover{
-background:#0055cc;
+
+/* ===========================
+   About
+=========================== */
+
+#about p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    font-size:18px;
 }
+
+/* ===========================
+   Skills
+=========================== */
+
+.skills-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+}
+
+.skill-card{
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+    font-size:22px;
+    font-weight:600;
+    transition:.3s;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.skill-card:hover{
+    transform:translateY(-10px);
+    background:#2563eb;
+    color:white;
+}
+
+/* ===========================
+   Projects
+=========================== */
+
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.project-card{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 8px 18px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+}
+
+.project-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.project-card h3{
+    margin:20px;
+}
+
+.project-card p{
+    margin:0 20px 20px;
+}
+
+.project-card button{
+    margin:20px;
+    padding:10px 18px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.project-card button:hover{
+    background:#1d4ed8;
+}
+
+/* ===========================
+   Resume
+=========================== */
+
+#resume{
+    text-align:center;
+}
+
+/* ===========================
+   Contact
+=========================== */
+
+form{
+    max-width:700px;
+    margin:auto;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    outline:none;
+}
+
+form button{
+    padding:14px 35px;
+    border:none;
+    background:#2563eb;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+form button:hover{
+    background:#1d4ed8;
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:#111827;
+    color:white;
+}
+
+/* ===========================
+   Dark Mode
+=========================== */
+
+.dark{
+    background:#0f172a;
+    color:white;
+}
+
+.dark header{
+    background:#1e293b;
+}
+
+.dark nav ul li a{
+    color:white;
+}
+
+.dark .skill-card,
+.dark .project-card{
+    background:#1e293b;
+    color:white;
+}
+
+.dark form input,
+.dark form textarea{
+    background:#1e293b;
+    color:white;
+    border:1px solid #555;
+}
+
+.dark footer{
+    background:#000;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:992px){
+
+#home{
+    flex-direction:column-reverse;
+    text-align:center;
+    padding-top:40px;
+}
+
+.home-text{
+    width:100%;
+}
+
+.home-image{
+    width:100%;
+    margin-bottom:40px;
+}
+
+.home-image img{
+    width:250px;
+}
+
+.home-text h1{
+    font-size:40px;
+}
+
+}
+
 @media(max-width:768px){
-section{
-padding:30px;
+
+nav{
+    flex-direction:column;
 }
-h1{
-font-size:30px;
+
+nav ul{
+    flex-direction:column;
+    margin-top:15px;
+}
+
+nav ul li{
+    margin:10px 0;
+}
+
+section{
+    padding:60px 8%;
+}
+
+section h2{
+    font-size:32px;
+}
+
+.home-text h1{
+    font-size:34px;
+}
+
+.home-text p{
+    font-size:16px;
+}
+
+}
+
+@media(max-width:480px){
+
+.home-image img{
+    width:200px;
+}
+
+.logo{
+    font-size:22px;
+}
+
+section h2{
+    font-size:28px;
+}
+
+.btn{
+    padding:10px 20px;
+}
+
+.project-card img{
+    height:170px;
+}
+
 }
