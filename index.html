@@ -1,479 +1,169 @@
-/* ===========================================
-   Google Font
-=========================================== */
+<!DOCTYPE html>
+<html lang="en">
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+<head>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-    scroll-behavior:smooth;
-}
+    <meta charset="UTF-8">
 
-html{
-    scroll-behavior:smooth;
-}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-body{
-    background:#0f172a;
-    color:#ffffff;
-    overflow-x:hidden;
-}
+    <title>MD Sahabuddin | Portfolio</title>
 
-/* ===========================================
-   Variables
-=========================================== */
+    <link rel="stylesheet" href="style.css">
 
-:root{
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    --primary:#2563eb;
-    --secondary:#38bdf8;
-    --dark:#0f172a;
-    --card:#1e293b;
-    --text:#ffffff;
-    --gray:#94a3b8;
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-}
+</head>
 
-/* ===========================================
-   Loader
-=========================================== */
+<body>
 
-#loader{
+    <!-- ================= Loader ================= -->
 
-    position:fixed;
-    top:0;
-    left:0;
+    <div id="loader">
 
-    width:100%;
-    height:100vh;
+        <div class="spinner"></div>
 
-    background:#0f172a;
+    </div>
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    <!-- ================= Progress Bar ================= -->
 
-    z-index:9999;
+    <div id="progress-bar"></div>
 
-}
+    <!-- ================= Header ================= -->
 
-.spinner{
+    <header>
 
-    width:70px;
-    height:70px;
+        <nav>
 
-    border:8px solid #ffffff30;
-    border-top:8px solid #38bdf8;
+            <h2 class="logo">MS.</h2>
 
-    border-radius:50%;
+            <ul id="menu">
 
-    animation:spin 1s linear infinite;
+                <li><a href="#home">Home</a></li>
 
-}
+                <li><a href="#about">About</a></li>
 
-@keyframes spin{
+                <li><a href="#skills">Skills</a></li>
 
-    100%{
+                <li><a href="#services">Services</a></li>
 
-        transform:rotate(360deg);
+                <li><a href="#projects">Projects</a></li>
 
-    }
+                <li><a href="#certificate">Certificates</a></li>
 
-}
+                <li><a href="#contact">Contact</a></li>
 
-/* ===========================================
-   Scroll Progress Bar
-=========================================== */
+            </ul>
 
-#progress-bar{
+            <div class="icons">
 
-    position:fixed;
+                <button id="theme-btn">
 
-    top:0;
-    left:0;
+                    <i class="fa-solid fa-moon"></i>
 
-    width:0%;
+                </button>
 
-    height:5px;
+                <button id="menu-btn">
 
-    background:#38bdf8;
+                    <i class="fa-solid fa-bars"></i>
 
-    z-index:99999;
+                </button>
 
-}
+            </div>
 
-/* ===========================================
-   Header
-=========================================== */
+        </nav>
 
-header{
+    </header>
 
-    width:100%;
-    position:fixed;
-    top:0;
-    left:0;
+    <!-- ================= Hero Section ================= -->
 
-    backdrop-filter:blur(15px);
+    <section id="home">
 
-    background:rgba(15,23,42,.75);
+        <div class="left">
 
-    z-index:999;
+            <p class="hello">
 
-    border-bottom:1px solid rgba(255,255,255,.1);
+                Hello 👋 I'm
 
-}
+            </p>
 
-/* ===========================================
-   Navbar
-=========================================== */
+            <h1>
 
-nav{
+                MD <span>Sahabuddin</span>
 
-    width:90%;
-    margin:auto;
+            </h1>
 
-    height:80px;
+            <h3>
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+                <span id="typing"></span>
 
-}
+            </h3>
 
-.logo{
+            <p>
 
-    font-size:35px;
+                I create modern, responsive and user-friendly websites using HTML, CSS, JavaScript, React and Node.js.
 
-    font-weight:700;
+            </p>
 
-    color:#38bdf8;
+            <div class="buttons">
 
-    letter-spacing:2px;
+                <a href="#projects" class="btn">
 
-}
+                    View Projects
 
-nav ul{
+                </a>
 
-    display:flex;
+                <a href="resume.pdf" download class="btn2">
 
-    list-style:none;
+                    Download Resume
 
-}
+                </a>
 
-nav ul li{
+            </div>
 
-    margin-left:30px;
+            <div class="social">
 
-}
+                <a href="#"><i class="fab fa-github"></i></a>
 
-nav ul li a{
+                <a href="#"><i class="fab fa-linkedin"></i></a>
 
-    color:white;
+                <a href="#"><i class="fab fa-instagram"></i></a>
 
-    text-decoration:none;
+                <a href="#"><i class="fab fa-facebook"></i></a>
 
-    font-size:17px;
+            </div>
 
-    transition:.4s;
+        </div>
 
-    position:relative;
+        <div class="right">
 
-}
+            <img src="images/profile.png" alt="Profile">
 
-nav ul li a::after{
+        </div>
 
-    content:"";
+    </section>
 
-    position:absolute;
+    <!-- About Section Starts Here -->
 
-    left:0;
-    bottom:-8px;
+    <!-- Skills Section -->
 
-    width:0%;
+    <!-- Services -->
 
-    height:2px;
+    <!-- Projects -->
 
-    background:#38bdf8;
+    <!-- Certificates -->
 
-    transition:.4s;
+    <!-- Contact -->
 
-}
+    <!-- Footer -->
 
-nav ul li a:hover::after{
+    <script src="script.js"></script>
 
-    width:100%;
+</body>
 
-}
-
-nav ul li a:hover{
-
-    color:#38bdf8;
-
-}
-
-/* ===========================================
-   Icons
-=========================================== */
-
-.icons{
-
-    display:flex;
-
-    gap:15px;
-
-}
-
-.icons button{
-
-    width:45px;
-
-    height:45px;
-
-    border:none;
-
-    border-radius:50%;
-
-    background:#1e293b;
-
-    color:white;
-
-    cursor:pointer;
-
-    transition:.4s;
-
-    font-size:18px;
-
-}
-
-.icons button:hover{
-
-    background:#38bdf8;
-
-    transform:rotate(360deg);
-
-}
-
-/* ===========================================
-   Hero Section
-=========================================== */
-
-#home{
-
-    width:90%;
-
-    margin:auto;
-
-    min-height:100vh;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-}
-
-.left{
-
-    width:55%;
-
-}
-
-.right{
-
-    width:40%;
-
-    text-align:center;
-
-}
-
-.hello{
-
-    color:#38bdf8;
-
-    font-size:20px;
-
-    margin-bottom:15px;
-
-}
-
-.left h1{
-
-    font-size:65px;
-
-    margin-bottom:15px;
-
-}
-
-.left span{
-
-    color:#38bdf8;
-
-}
-
-.left h3{
-
-    font-size:35px;
-
-    margin-bottom:20px;
-
-    color:#94a3b8;
-
-}
-
-.left p{
-
-    font-size:18px;
-
-    line-height:1.8;
-
-    color:#cbd5e1;
-
-}
-
-.right img{
-
-    width:380px;
-
-    border-radius:50%;
-
-    border:8px solid #38bdf8;
-
-    box-shadow:0 0 40px rgba(56,189,248,.4);
-
-    animation:float 4s ease-in-out infinite;
-
-}
-
-/* Floating Animation */
-
-@keyframes float{
-
-    0%{
-
-        transform:translateY(0);
-
-    }
-
-    50%{
-
-        transform:translateY(-20px);
-
-    }
-
-    100%{
-
-        transform:translateY(0);
-
-    }
-
-}
-
-/* ===========================================
-   Buttons
-=========================================== */
-
-.buttons{
-
-    margin-top:35px;
-
-}
-
-.btn{
-
-    display:inline-block;
-
-    padding:15px 35px;
-
-    background:#38bdf8;
-
-    color:white;
-
-    text-decoration:none;
-
-    border-radius:50px;
-
-    margin-right:15px;
-
-    transition:.4s;
-
-}
-
-.btn:hover{
-
-    transform:translateY(-5px);
-
-    box-shadow:0 10px 20px rgba(56,189,248,.4);
-
-}
-
-.btn2{
-
-    display:inline-block;
-
-    padding:15px 35px;
-
-    border:2px solid #38bdf8;
-
-    border-radius:50px;
-
-    text-decoration:none;
-
-    color:white;
-
-    transition:.4s;
-
-}
-
-.btn2:hover{
-
-    background:#38bdf8;
-
-}
-
-/* ===========================================
-   Social Icons
-=========================================== */
-
-.social{
-
-    margin-top:40px;
-
-}
-
-.social a{
-
-    width:50px;
-
-    height:50px;
-
-    display:inline-flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    border-radius:50%;
-
-    background:#1e293b;
-
-    color:white;
-
-    margin-right:12px;
-
-    font-size:22px;
-
-    transition:.4s;
-
-}
-
-.social a:hover{
-
-    background:#38bdf8;
-
-    transform:translateY(-8px);
-
-}
+</html>
