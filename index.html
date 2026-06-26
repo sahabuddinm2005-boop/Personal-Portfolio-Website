@@ -1,271 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+
+    <title>MD Sahabuddin | Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 </head>
+
 <body>
 
-<!-- ================= NAVBAR ================= -->
+    <!-- ================= Loader ================= -->
 
-<header>
+    <div id="loader">
 
-<nav>
+        <div class="spinner"></div>
 
-<div class="logo">
-MyPortfolio
-</div>
+    </div>
 
-<ul>
+    <!-- ================= Progress Bar ================= -->
 
-<li><a href="#home">Home</a></li>
+    <div id="progress-bar"></div>
 
-<li><a href="#about">About</a></li>
+    <!-- ================= Header ================= -->
 
-<li><a href="#skills">Skills</a></li>
+    <header>
 
-<li><a href="#projects">Projects</a></li>
+        <nav>
 
-<li><a href="#contact">Contact</a></li>
+            <h2 class="logo">MS.</h2>
 
-</ul>
+            <ul id="menu">
 
-<button id="dark-btn">
-🌙
-</button>
+                <li><a href="#home">Home</a></li>
 
-</nav>
+                <li><a href="#about">About</a></li>
 
-</header>
+                <li><a href="#skills">Skills</a></li>
 
-<!-- ================= HOME ================= -->
+                <li><a href="#services">Services</a></li>
 
-<section id="home">
+                <li><a href="#projects">Projects</a></li>
 
-<div class="home-text">
+                <li><a href="#certificate">Certificates</a></li>
 
-<h1>Hello, I'm <span>MD Sahabuddin</span></h1>
+                <li><a href="#contact">Contact</a></li>
 
-<h2>Frontend Web Developer</h2>
+            </ul>
 
-<p>
+            <div class="icons">
 
-I build responsive and modern websites using HTML CSS JavaScript.
+                <button id="theme-btn">
 
-</p>
+                    <i class="fa-solid fa-moon"></i>
 
-<a href="#projects" class="btn">
-View Projects
-</a>
+                </button>
 
-</div>
+                <button id="menu-btn">
 
-<div class="home-image">
+                    <i class="fa-solid fa-bars"></i>
 
-<img src="images/profile.png" alt="Profile">
+                </button>
 
-</div>
+            </div>
 
-</section>
+        </nav>
 
-<!-- ================= ABOUT ================= -->
+    </header>
 
-<section id="about">
+    <!-- ================= Hero Section ================= -->
 
-<h2>About Me</h2>
+    <section id="home">
 
-<p>
+        <div class="left">
 
-I'm currently learning Full Stack Web Development.
+            <p class="hello">
 
-I enjoy building responsive websites and solving real-world problems through programming.
+                Hello 👋 I'm
 
-My goal is to become a professional Software Developer.
+            </p>
 
-</p>
+            <h1>
 
-</section>
+                MD <span>Sahabuddin</span>
 
-<!-- ================= SKILLS ================= -->
+            </h1>
 
-<section id="skills">
+            <h3>
 
-<h2>My Skills</h2>
+                <span id="typing"></span>
 
-<div class="skills-container">
+            </h3>
 
-<div class="skill-card">
+            <p>
 
-HTML
+                I create modern, responsive and user-friendly websites using HTML, CSS, JavaScript, React and Node.js.
 
-</div>
+            </p>
 
-<div class="skill-card">
+            <div class="buttons">
 
-CSS
+                <a href="#projects" class="btn">
 
-</div>
+                    View Projects
 
-<div class="skill-card">
+                </a>
 
-JavaScript
+                <a href="resume.pdf" download class="btn2">
 
-</div>
+                    Download Resume
 
-<div class="skill-card">
+                </a>
 
-React
+            </div>
 
-</div>
+            <div class="social">
 
-<div class="skill-card">
+                <a href="#"><i class="fab fa-github"></i></a>
 
-Node.js
+                <a href="#"><i class="fab fa-linkedin"></i></a>
 
-</div>
+                <a href="#"><i class="fab fa-instagram"></i></a>
 
-<div class="skill-card">
+                <a href="#"><i class="fab fa-facebook"></i></a>
 
-Git
+            </div>
 
-</div>
+        </div>
 
-</div>
+        <div class="right">
 
-</section>
+            <img src="images/profile.png" alt="Profile">
 
-<!-- ================= PROJECTS ================= -->
+        </div>
 
-<section id="projects">
+    </section>
 
-<h2>Projects</h2>
+    <!-- About Section Starts Here -->
 
-<div class="project-container">
+    <!-- Skills Section -->
 
-<div class="project-card">
+    <!-- Services -->
 
-<img src="images/project1.png">
+    <!-- Projects -->
 
-<h3>Portfolio Website</h3>
+    <!-- Certificates -->
 
-<p>
+    <!-- Contact -->
 
-Responsive Portfolio using HTML CSS JavaScript
+    <!-- Footer -->
 
-</p>
-
-<button>
-
-View Project
-
-</button>
-
-</div>
-
-<div class="project-card">
-
-<img src="images/project2.png">
-
-<h3>Kisan Mitra</h3>
-
-<p>
-
-Farm Equipment Rental Website
-
-</p>
-
-<button>
-
-View Project
-
-</button>
-
-</div>
-
-<div class="project-card">
-
-<img src="images/project3.png">
-
-<h3>Weather App</h3>
-
-<p>
-
-Weather API Project
-
-</p>
-
-<button>
-
-View Project
-
-</button>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= RESUME ================= -->
-
-<section id="resume">
-
-<h2>Resume</h2>
-
-<a href="resume.pdf" download class="btn">
-
-Download Resume
-
-</a>
-
-</section>
-
-<!-- ================= CONTACT ================= -->
-
-<section id="contact">
-
-<h2>Contact Me</h2>
-
-<form id="contact-form">
-
-<input type="text" placeholder="Your Name" required>
-
-<input type="email" placeholder="Your Email" required>
-
-<textarea rows="6" placeholder="Your Message"></textarea>
-
-<button type="submit">
-
-Send Message
-
-</button>
-
-</form>
-
-</section>
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-<p>
-
-© 2026 MD Sahabuddin | All Rights Reserved
-
-</p>
-
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
