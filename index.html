@@ -1,27 +1,271 @@
-<section id="home">
-<h1>Hello, I'm a Web Developer</h1>
-<p>I build responsive websites using HTML, CSS and JavaScript.</p>
-<button>View Projects</button>
-</section>
-<section id="about">
-<h2>About Me</h2>
-<p>I am passionate about web development and enjoy building responsive websites and solving real-world problems through code.</p>
-</section>
-<section id="skills">
-<div class="skill">HTML</div>
-<div class="skill">CSS</div>
-<div class="skill">JavaScript</div>
-<div class="skill">React</div>
-</section>
-<div class="project">
-<h3>Weather App</h3>
-<p>Weather application using OpenWeather API.</p>
-<button>View Project</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+<nav>
+
+<div class="logo">
+MyPortfolio
 </div>
-<a href="resume.pdf" download>Download Resume</a>
-<form>
-<input type="text" placeholder="Your Name">
-<input type="email" placeholder="Your Email">
-<textarea placeholder="Your Message"></textarea>
-<button>Send</button>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#skills">Skills</a></li>
+
+<li><a href="#projects">Projects</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<button id="dark-btn">
+🌙
+</button>
+
+</nav>
+
+</header>
+
+<!-- ================= HOME ================= -->
+
+<section id="home">
+
+<div class="home-text">
+
+<h1>Hello, I'm <span>MD Sahabuddin</span></h1>
+
+<h2>Frontend Web Developer</h2>
+
+<p>
+
+I build responsive and modern websites using HTML CSS JavaScript.
+
+</p>
+
+<a href="#projects" class="btn">
+View Projects
+</a>
+
+</div>
+
+<div class="home-image">
+
+<img src="images/profile.png" alt="Profile">
+
+</div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+
+I'm currently learning Full Stack Web Development.
+
+I enjoy building responsive websites and solving real-world problems through programming.
+
+My goal is to become a professional Software Developer.
+
+</p>
+
+</section>
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills">
+
+<h2>My Skills</h2>
+
+<div class="skills-container">
+
+<div class="skill-card">
+
+HTML
+
+</div>
+
+<div class="skill-card">
+
+CSS
+
+</div>
+
+<div class="skill-card">
+
+JavaScript
+
+</div>
+
+<div class="skill-card">
+
+React
+
+</div>
+
+<div class="skill-card">
+
+Node.js
+
+</div>
+
+<div class="skill-card">
+
+Git
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="project-container">
+
+<div class="project-card">
+
+<img src="images/project1.png">
+
+<h3>Portfolio Website</h3>
+
+<p>
+
+Responsive Portfolio using HTML CSS JavaScript
+
+</p>
+
+<button>
+
+View Project
+
+</button>
+
+</div>
+
+<div class="project-card">
+
+<img src="images/project2.png">
+
+<h3>Kisan Mitra</h3>
+
+<p>
+
+Farm Equipment Rental Website
+
+</p>
+
+<button>
+
+View Project
+
+</button>
+
+</div>
+
+<div class="project-card">
+
+<img src="images/project3.png">
+
+<h3>Weather App</h3>
+
+<p>
+
+Weather API Project
+
+</p>
+
+<button>
+
+View Project
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= RESUME ================= -->
+
+<section id="resume">
+
+<h2>Resume</h2>
+
+<a href="resume.pdf" download class="btn">
+
+Download Resume
+
+</a>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<form id="contact-form">
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<textarea rows="6" placeholder="Your Message"></textarea>
+
+<button type="submit">
+
+Send Message
+
+</button>
+
 </form>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<p>
+
+© 2026 MD Sahabuddin | All Rights Reserved
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
